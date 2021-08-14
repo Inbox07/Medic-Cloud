@@ -1,0 +1,342 @@
+
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="widthdevice-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="shortcut icon" href="medic_cloud.png">
+	<title>Inicio de Sesión</title>
+
+    <script>
+        $correo=$_GET["email"];
+        $nombre=$_GET["usuario"];
+        $contraseña=$_GET["password"];
+    </script>
+
+	<style>
+
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	body {
+		background:  linear-gradient(88.25deg,skyblue .18%, white 37.7%,blue 119.08%);
+    font-family: sans-serif;
+}
+	
+	h1 a {  
+		color: White;
+		font-size: 47px;
+		text-align: center;
+		background-color: blue;
+		border-radius: 23px;
+		text-decoration: none;
+		display: inline-flex;
+		transform: translateY(15px);
+		border-style: groove;
+		transition: 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25),
+        transform 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25);
+	}
+	h1 a :hover{
+	background-color: white;
+    margin-left: 15%;
+    padding: 2%;
+    margin-right: 15%;
+    border-radius: 4px 4px 4px 4px;
+    transition: all ease 0.5s;
+	}
+	
+	/*Aqui se colocan los estilos que se utiliza para el menu de hamburguesa*/
+	.respmenu a { 
+  color: inherit;
+  text-decoration: none;
+  display: inline-grid;
+  padding: 10px 20px;
+  border-bottom: 2px solid #456789;
+  max-width: 200px;
+  font-variant: small-caps;
+  text-shadow: 1px 1px black;
+  text-align: left;
+}
+
+.respmenu input[type="checkbox"], .respmenu .fa-bars, .respmenu .fa-times {
+      position: absolute;  
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      right: 0;
+      top: 0;
+      width: 48px;
+      height: 48px;
+      }
+ 
+.respmenu .fa-bars, .respmenu .fa-times {
+  font-size: 28px;
+  pointer-events: visible;
+
+}
+ 
+.respmenu {
+  color: white;
+  position: relative; 
+  background: #21627A;
+  min-height: 48px;
+  border-radius: 23px;
+  display: inline-flex;
+  box-shadow: 20px 20px 10px 10px rgb(0 0 0 / 70%);
+  transform: translateY(20px);
+  margin: auto;
+}
+ 
+.respmenu nav {
+  display: inline-flex;
+}
+ .respmenu a hover::after {
+    padding: 5%;
+    background: #49cb1c;
+    margin-right: 25%;
+    margin-left: 25%;
+    border-radius: 6px 6px 6px 6px;
+    box-shadow: 20px 20px 10px 10px rgba(0,0,0,0.7);
+    transition: 0.4s;
+	transition-property: all;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+ }
+
+/*hasta aqui se terminaria el menu de hambueguesa*/
+/*Esta parte es el formulario*/
+	form, my-form{
+		width: 500px;
+		background: #24303c;
+		padding: 30px;
+		margin: auto;
+		margin-top: 100px;
+		border-radius: 15px;
+		font-family: calibri;
+		color: white;
+		shape-outside: 23px;
+		transform: translateY(-200px);
+		border-style: outset;
+		box-shadow: 15px 21px grey;
+    border-radius: 6px 6px 6px 6px;
+    box-shadow: 20px 20px 10px 10px rgb(0 0 0 / 70%);
+    transition: 0.4s;
+	}
+
+	.my-form p {
+		height: 40px;
+		text-align: center;
+		font-size: 18px;
+	}
+
+  .my-form a {
+	  color: #b2b5bd;
+	  text-decoration: none;
+	}
+
+	.my-form a :hover{
+    color: yellow;
+    text-decoration: none;
+	}
+
+	h2{
+		font-size: 22px;
+		font-family: Raleway;
+		text-align: center;
+		margin: 23px;
+	}
+
+	.controls{
+    width: 100%;
+    padding: 10px;
+    border-radius: 25px;
+    margin-bottom: 16px;
+    border: 1px solid #2155c5;
+    font-family: Raleway;
+    font-size: 18px;
+    table-layout: center;
+    background-color: ghostwhites;
+	}	    
+
+	  footer{
+	  background: grey;
+	  color: mediumblue;
+	  padding: 1%;
+	  border-radius: 39px;
+	  font-family: sans-serif;
+	  margin: 23px;
+	}
+	.my-form ::placeholder {
+        color: cornflowerblue;
+		opacity: 1;
+
+	}
+
+	    .link1 {
+	    	color: orange;
+	    	font-size: 16px;
+	    	text-decoration: none;
+	    }
+	    input checked[checkbox]{
+	    	background-color: Grey;
+	    }
+
+	    .terms{
+	      text-decoration: none;
+	      color: black; 
+	    }
+	    p, i {
+	    	font-size: 13px;
+	    }
+	    input.botons{
+
+	      position: relative;
+	      display: block;
+	      padding: 25px 15px;
+	      border-radius: 6px;
+	      text-align: center;
+	      font-weight: bold;
+	      max-width: 320px;
+	      height: 65px;
+	      margin-bottom: 60px;
+	      overflow: hidden;
+	      color:rgba(255,255,255,1);
+	      cursor: pointer;
+	      letter-spacing: 2px;
+	      box-shadow:inset 0 0 0 1px rgba(0,0,0,0.1);
+	      text-decoration: none;
+	      transition: all ease 0.5s;
+	      background:#10B87B;
+	      transform: translateX(100px) translateY(20px);
+        }
+        .text-fin {
+        	color: grey;
+        	background: transparent;
+        	text-shadow: 9px 11px black;
+        }
+ 
+input.botons:after,
+input.botons:before{
+	width: 89px;
+	height: 200px;
+	content: '';
+	display: block;
+	background: rgba(255,255,255,0.5);
+	transform: rotate(49deg);
+	top: -65px;
+	position: absolute;
+	transition: none;
+	right:-45%;
+	cursor: pointer;
+}
+ 
+input.botons:before{
+	left: -48%;
+}
+ 
+input.botons:hover{
+	text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+	background:#12C987
+}
+ 
+input.botons:hover:after,
+input.botons:hover:before{
+	transform: rotate(45deg), scaleX(130%);
+	background: rgba(255,255,255,0.1);
+	transition: all ease 0.5s;
+}
+ 
+input.botons:hover:after{
+	right: 250%;
+}
+ 
+input.botons:hover:before{
+	left: 300%;
+  }
+  .post-insta {
+	 transform: translateX(350%);
+    transition: img ease-in-out;
+	transition-delay: none;
+	transition-timing-function: ease-out;
+  }
+  input.date {
+background-color: #b2b5bd;
+color: aliceblue;
+font-size: 23px;
+text-align: left;
+  }
+  label.text-date {
+	  color: darkblue;
+	  background-color: white;
+	  font-size: 23px;
+	  font-family: Verdana, Geneva, Tahoma, sans-serif;
+	  border-radius: 5pt;
+	  text-align: left;
+  }
+	</style>
+
+</head>
+
+    <body>
+		<div>
+		<img id="log" src="img/medic_cloud.png" width="45px" alt="Logo Medic Cloud"
+		</div>
+		<div>
+			<label class="text-date" for="start">Fecha</label>
+
+			<input class="date" type="date" id="start"
+			name="trip-start" value="2021-08-13"
+			min="2021-01-1" max="2021-12-31">
+		</div>
+    	<center>
+    <h1><a href="#">MEDIC CLOUD</a></h1>
+    </center>
+  <nav>
+    <div class="respmenu">
+    <ul>
+      <li id="slider1"><a href="">Menú</a></li>
+      <li id="slider2"><a href="">Especialidades</a></li>
+      <li id="slider3"><a href="">Misión y visión</a></li>
+      <li id="slider4"><a href="">¿Quienes somos?</a></li>
+      <li id="slider5"><a href="">Ayuda!</a></li>
+    </ul>
+  </nav>
+</div>
+        <section class="my-form">
+        	<form>
+             <h2>
+              <hr></hr>
+             	 Iniciar Sesión 
+             	<hr></hr>
+             </h2>
+
+    		<input class="controls" type="email" name="ingrese su correo" id="email" placeholder="Ingrese su correo" required>
+
+    		<input class="controls" type="Nickname" name="Usuario" id="nickname" placeholder="Usuario" required>
+
+    		<input class="controls" type="password" minlength="1" maxlength="9" name="contraseña" id="password" placeholder="Contraseña" required >
+
+            <p><a class="link1" href=""> ¿No recuerdas la contraseña?</a></p>
+
+    		<input type="checkbox" name="terms" required><p>Estoy de Acuerdo con los<a class="terms" href="Terminos y condiciones.html"> terminos y condiciones.</a></p>
+
+    		<input class="botons"  type="submit" value="Iniciar Sesión" placeholder="Iniciar Sesión" required>
+    		<div class="text-fin">
+    			<p><i>Derechos Reservados 2021</i></p>
+    		</div>
+    		</form>
+        </section>
+              <footer>Siguenos en nuestras redes 
+				<img class="post-insta" src="https://i.postimg.cc/W4NwQLP2/instagram.png"" width="60px" height="60px">
+				<img class="post-insta" src="https://i.postimg.cc/W4NwQLP2/instagram.png"" width="60px" height="60px">
+				<img class="post-insta" src="https://i.postimg.cc/W4NwQLP2/instagram.png"" width="60px" height="60px">
+				<img class="post-insta" src="https://i.postimg.cc/W4NwQLP2/instagram.png"" width="60px" height="60px">
+
+
+              </footer>
+    </body>
+</html>
